@@ -14,7 +14,7 @@ library(iml)
 library(cowplot)
 
 # Load data and compute Kidera factors
-df <- read.csv("datasetSI.csv", header = TRUE)
+df <- read.csv("../data/train.csv", header = TRUE)
 kf <- kideraFactors(seq = df$Sequence)
 kf_df <- as.data.frame(do.call(rbind, kf))
 mother_dataset <- cbind(df, kf_df)
