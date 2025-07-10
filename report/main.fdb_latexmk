@@ -1,6 +1,6 @@
 # Fdb version 4
-["pdflatex"] 1752061052.99474 "/Users/aliahmadi/Documents/Projects/gold-binding-peptide/report/main.tex" "main.pdf" "main" 1752061054.91625 2
-  "/Users/aliahmadi/Documents/Projects/gold-binding-peptide/report/main.tex" 1752061049.58081 22673 e2d55ad0a20633e85aa45d16d10bbe7c ""
+["pdflatex"] 1752125813.97771 "/Users/aliahmadi/Documents/Projects/gold-binding-peptide/report/main.tex" "main.pdf" "main" 1752125814.3831 2
+  "/Users/aliahmadi/Documents/Projects/gold-binding-peptide/report/main.tex" 1752125811.85904 20117 0d408affcbc08d336fab1a0cbd30cb7b ""
   "/usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc" 1136849721 2900 1537cc8184ad1792082cd229ecc269f4 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/tfm/jknappen/ec/tcrm1000.tfm" 1136768653 1536 e07581a4bb3136ece9eeb4c3ffab8233 ""
@@ -73,8 +73,8 @@
   "/usr/local/texlive/2025/texmf.cnf" 1741450484 577 418a7058ec8e006d8704f60ecd22c938 ""
   "images/1.png" 1750695608 27332 177f4f72177f27c78123daffac0b4363 ""
   "images/2.png" 1750695608 21275 b29b1e31fdbec46d7c306431d32f505f ""
-  "main.aux" 1752061054.6978 4714 1b46b5f6db0953d065f39c85fcb93762 "pdflatex"
-  "main.tex" 1752061049.58081 22673 e2d55ad0a20633e85aa45d16d10bbe7c ""
+  "main.aux" 1752125814.33574 3248 1b26237c8d6d82ce8e0bccf6d5c2c31d "pdflatex"
+  "main.tex" 1752125811.85904 20117 0d408affcbc08d336fab1a0cbd30cb7b ""
   (generated)
   "main.aux"
   "main.log"

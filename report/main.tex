@@ -248,114 +248,27 @@ During training, \texttt{BCEWithLogitsLoss} with \textbf{class weighting} was ut
 \section{Results}
 This section presents the performance of the various machine learning models employed for classifying gold-binding peptides. The evaluation metrics include Accuracy, F1-score (for both classes and macro average), Precision, Recall, and ROC AUC, alongside their respective confusion matrices.
 
-\subsection{XGBoost Classifier Performance}
-The XGBoost classifier demonstrated strong performance on the test set.
-
-The confusion matrix for the XGBoost model is presented in Table \ref{tab:xgboost_cm}.
-
-\begin{table}[h!]
-\centering
-\begin{tabular}{|c|c|c|}
-\hline
- & \multicolumn{2}{c|}{\textbf{Reference}} \\
-\cline{2-3}
- & \textbf{Class B} & \textbf{Class A} \\
-\hline
-\textbf{Prediction Class B} & 169 & 46 \\
-\hline
-\textbf{Prediction Class A} & 32 & 183 \\
-\hline
-\end{tabular}
-\caption{Confusion Matrix for XGBoost Classifier}
-\label{tab:xgboost_cm}
-\end{table}
-
-\subsection{Support Vector Machine (SVM) Classifier Performance}
-The Support Vector Machine (SVM) classifier achieved notable results, exhibiting high overall accuracy and balanced F1-scores.
-
-The confusion matrix for the SVM model is presented in Table \ref{tab:svm_cm}.
-
-\begin{table}[h!]
-\centering
-\begin{tabular}{|c|c|c|}
-\hline
- & \multicolumn{2}{c|}{\textbf{Reference}} \\
-\cline{2-3}
- & \textbf{Class B} & \textbf{Class A} \\
-\hline
-\textbf{Prediction Class B} & 176 & 39 \\
-\hline
-\textbf{Prediction Class A} & 35 & 180 \\
-\hline
-\end{tabular}
-\caption{Confusion Matrix for SVM Classifier}
-\label{tab:svm_cm}
-\end{table}
-
-\subsection{Residual Attention Neural Network Performance}
-The Residual Attention Neural Network delivered a strong performance, achieving the highest accuracy among the single-embedding models.
-
-The confusion matrix for the Residual Attention Neural Network is presented in Table \ref{tab:residual_attention_cm}.
-
-\begin{table}[h!]
-\centering
-\begin{tabular}{|c|c|c|}
-\hline
- & \multicolumn{2}{c|}{\textbf{Reference}} \\
-\cline{2-3}
- & \textbf{Class B} & \textbf{Class A} \\
-\hline
-\textbf{Prediction Class B} & 171 & 44 \\
-\hline
-\textbf{Prediction Class A} & 28 & 187 \\
-\hline
-\end{tabular}
-\caption{Confusion Matrix for Residual Attention Neural Network}
-\label{tab:residual_attention_cm}
-\end{table}
-
-\subsection{Siamese-like Neural Network Performance}
-The Siamese-like Neural Network, leveraging multiple embedding types, achieved the best overall performance in terms of accuracy and F1-score.
-
-The confusion matrix for the Siamese-like Neural Network is presented in Table \ref{tab:siamese_cm}.
-
-\begin{table}[h!]
-\centering
-\begin{tabular}{|c|c|c|}
-\hline
- & \multicolumn{2}{c|}{\textbf{Reference}} \\
-\cline{2-3}
- & \textbf{Class B} & \textbf{Class A} \\
-\hline
-\textbf{Prediction Class B} & 170 & 45 \\
-\hline
-\textbf{Prediction Class A} & 24 & 191 \\
-\hline
-\end{tabular}
-\caption{Confusion Matrix for Siamese-like Neural Network}
-\label{tab:siamese_cm}
-\end{table}
-
-\subsection{Comparative Summary of Model Performance}
-Table \ref{tab:all_model_performance} provides a concise summary of the key performance metrics for all evaluated models.
+Table 3 provides a concise summary of the key performance metrics for all evaluated models.
 
 \begin{table}[h!]
 \centering
 \resizebox{\textwidth}{!}{%
 \begin{tabular}{|l|c|c|c|c|c|}
 \hline
-\textbf{Model} & \textbf{Accuracy} & \textbf{F1-score (Macro Avg)} & \textbf{Precision} & \textbf{Recall} & \textbf{True Positives (A)} \\
+\textbf{Model} & \textbf{Accuracy} & \textbf{F1-score (Macro)} & \textbf{Precision} & \textbf{Recall} & \textbf{True Positives} \\
 \hline
-Related Work (RBF-SVM) & 0.8019 & 0.8021 & 0.7963 & 0.8093 & 169 \\
-XGBoost & 0.8186 & 0.8184 & 0.7991 & 0.8512 & 183 \\
-SVM & 0.8279 & 0.8279 & 0.8219 & 0.8372 & 180 \\
-Residual Attention NN & 0.8326 & 0.8323 & 0.8095 & 0.8698 & 187 \\
-Siamese-like NN & \textbf{0.8395} & \textbf{0.8392} & 0.8093 & \textbf{0.8884} & \textbf{191} \\
+Related Work & 0.802 & 0.811 & 0.796 & 0.847 & 344 \\
+XGBoost & 0.819 & 0.818 & 0.799 & 0.851 & 352 \\
+SVM & 0.828 & 0.828 & \textbf{0.822} & 0.837 & 356 \\
+Residual Attention NN & 0.833 & 0.832 & 0.810 & 0.870 & 358 \\
+Siamese-like NN & \textbf{0.840} & \textbf{0.839} & 0.809 & \textbf{0.888} & \textbf{361} \\
 \hline
 \end{tabular}%
 }
 \caption{Comparative Summary of Model Performance on Test Set}
-\label{tab:all_model_performance}
+\label{all_model_performance}
 \end{table}
+
+The Siamese-like Neural Network, leveraging multiple embedding types, achieved the best overall performance in terms of accuracy and F1-score.
 
 \end{document}
