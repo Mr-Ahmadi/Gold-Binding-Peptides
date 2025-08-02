@@ -7,7 +7,7 @@
 
 ## Overview
 
-This repository contains the LaTeX source for a project report describing the development, evaluation, and interpretation of machine learning models designed to classify gold-binding peptides. The goal is to predict whether a given 10‑residue peptide will exhibit strong (Class A) or weak/non‑binding (Class B) affinity for gold nanoparticles based on physicochemical and sequence-derived features.
+This repository contains the source for a project on the development, evaluation, and interpretation of machine learning models designed to classify gold-binding peptides.
 
 ## Background
 
