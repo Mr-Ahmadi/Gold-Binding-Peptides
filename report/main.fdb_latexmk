@@ -1,6 +1,11 @@
 # Fdb version 4
-["pdflatex"] 1752125813.97771 "/Users/aliahmadi/Documents/Projects/gold-binding-peptide/report/main.tex" "main.pdf" "main" 1752125814.3831 2
-  "/Users/aliahmadi/Documents/Projects/gold-binding-peptide/report/main.tex" 1752125811.85904 20117 0d408affcbc08d336fab1a0cbd30cb7b ""
+["pdflatex"] 1754169857.73423 "/Users/aliahmadi/Documents/Projects/gold-binding-peptide/report/main.tex" "/Users/aliahmadi/Documents/Projects/gold-binding-peptide/report/main.pdf" "main" 1754169858.65945 2
+  "/Users/aliahmadi/Documents/Projects/gold-binding-peptide/report/images/1.png" 1750695608 27332 177f4f72177f27c78123daffac0b4363 ""
+  "/Users/aliahmadi/Documents/Projects/gold-binding-peptide/report/images/12.png" 1754166832.35345 153738 301a40074096c909d08456e114c3fc22 ""
+  "/Users/aliahmadi/Documents/Projects/gold-binding-peptide/report/images/13.png" 1754166845.45836 235671 963592d3bebdad1b73e8e6b40ba8057a ""
+  "/Users/aliahmadi/Documents/Projects/gold-binding-peptide/report/images/2.png" 1750695608 21275 b29b1e31fdbec46d7c306431d32f505f ""
+  "/Users/aliahmadi/Documents/Projects/gold-binding-peptide/report/main.aux" 1754169858.61042 3894 1d6ca9726a1869b769a79ee7edb9098a "pdflatex"
+  "/Users/aliahmadi/Documents/Projects/gold-binding-peptide/report/main.tex" 1754169857.61517 25912 15a2219afff2586bf53ea4ee3bab1545 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc" 1136849721 2900 1537cc8184ad1792082cd229ecc269f4 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/tfm/jknappen/ec/tcrm1000.tfm" 1136768653 1536 e07581a4bb3136ece9eeb4c3ffab8233 ""
@@ -71,12 +76,8 @@
   "/usr/local/texlive/2025/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1748540468 5467155 19efa205003f9ecad95fbbaa6ff24da1 ""
   "/usr/local/texlive/2025/texmf-var/web2c/pdftex/pdflatex.fmt" 1741450574 3345740 46b66fdb0378f7bf5921b5eabf1762b8 ""
   "/usr/local/texlive/2025/texmf.cnf" 1741450484 577 418a7058ec8e006d8704f60ecd22c938 ""
-  "images/1.png" 1750695608 27332 177f4f72177f27c78123daffac0b4363 ""
-  "images/2.png" 1750695608 21275 b29b1e31fdbec46d7c306431d32f505f ""
-  "main.aux" 1752125814.33574 3248 1b26237c8d6d82ce8e0bccf6d5c2c31d "pdflatex"
-  "main.tex" 1752125811.85904 20117 0d408affcbc08d336fab1a0cbd30cb7b ""
   (generated)
-  "main.aux"
-  "main.log"
-  "main.pdf"
+  "/Users/aliahmadi/Documents/Projects/gold-binding-peptide/report/main.aux"
+  "/Users/aliahmadi/Documents/Projects/gold-binding-peptide/report/main.log"
+  "/Users/aliahmadi/Documents/Projects/gold-binding-peptide/report/main.pdf"
   (rewritten before read)

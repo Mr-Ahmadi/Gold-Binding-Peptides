@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.3.8)  10 JUL 2025 09:06
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.3.8)  3 AUG 2025 00:54
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -167,8 +167,7 @@ Document Style - pseudocode environments for use with the `algorithmicx' style
 File: l3backend-pdftex.def 2024-05-08 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count295
 \l__pdf_internal_box=\box56
-)
-No file main.aux.
+) (/Users/aliahmadi/Documents/Projects/gold-binding-peptide/report/main.aux)
 \openout1 = `main.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 13.
@@ -185,7 +184,7 @@ LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 13.
 LaTeX Font Info:    ... okay on input line 13.
 LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 13.
 LaTeX Font Info:    ... okay on input line 13.
-(/usr/local/texlive/2025/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+ (/usr/local/texlive/2025/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count296
 \scratchdimen=\dimen161
@@ -263,7 +262,7 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
 
-[4 <./images/1.png> <./images/2.png>]
+[4 </Users/aliahmadi/Documents/Projects/gold-binding-peptide/report/images/1.png> </Users/aliahmadi/Documents/Projects/gold-binding-peptide/report/images/2.png>]
 Overfull \hbox (2.93137pt too wide) in paragraph at lines 164--165
 []\OT1/cmr/bx/n/10 Support Vec-tor Ma-chines (SVM): \OT1/cmr/m/n/10 Ef-fec-tive in high[]dimensional spaces
  []
@@ -287,30 +286,48 @@ Overfull \hbox (9.546pt too wide) in paragraph at lines 218--219
 
 
 [8]
+<images/12.png, id=51, 722.7pt x 505.89pt>
+File: images/12.png Graphic file (type png)
+<use images/12.png>
+Package pdftex.def Info: images/12.png  used on input line 281.
+(pdftex.def)             Requested size: 276.00105pt x 193.19737pt.
 
-[9] (./main.aux)
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<images/13.png, id=52, 578.16pt x 397.485pt>
+File: images/13.png Graphic file (type png)
+<use images/13.png>
+Package pdftex.def Info: images/13.png  used on input line 290.
+(pdftex.def)             Requested size: 276.00105pt x 189.74742pt.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+
+[9]
+
+[10 </Users/aliahmadi/Documents/Projects/gold-binding-peptide/report/images/12.png> </Users/aliahmadi/Documents/Projects/gold-binding-peptide/report/images/13.png>]
+
+[11] (/Users/aliahmadi/Documents/Projects/gold-binding-peptide/report/main.aux)
  ***********
 LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2025-01-18>
  ***********
-
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
  ) 
 Here is how much of TeX's memory you used:
- 4288 strings out of 473190
- 71588 string characters out of 5715801
- 469616 words of memory out of 5000000
- 27524 multiletter control sequences out of 15000+600000
+ 4307 strings out of 473190
+ 72333 string characters out of 5715801
+ 470939 words of memory out of 5000000
+ 27541 multiletter control sequences out of 15000+600000
  565538 words of font info for 60 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  67i,10n,77p,1325b,408s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt8.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb>
-Output written on main.pdf (9 pages, 279391 bytes).
+Output written on /Users/aliahmadi/Documents/Projects/gold-binding-peptide/report/main.pdf (11 pages, 605281 bytes).
 PDF statistics:
- 130 PDF objects out of 1000 (max. 8388607)
- 78 compressed objects within 1 object stream
+ 140 PDF objects out of 1000 (max. 8388607)
+ 82 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 11 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 21 words of extra memory for PDF output out of 10000 (max. 10000000)
 
