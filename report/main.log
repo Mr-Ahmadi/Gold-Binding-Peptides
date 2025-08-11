@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.3.8)  3 AUG 2025 00:54
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.3.8)  11 AUG 2025 12:12
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**/Users/aliahmadi/Documents/Projects/gold-binding-peptide/report/main.tex
-(/Users/aliahmadi/Documents/Projects/gold-binding-peptide/report/main.tex
+**/Users/aliahmadi/Documents/Projects/Gold-Binding-Peptide/report/main.tex
+(/Users/aliahmadi/Documents/Projects/Gold-Binding-Peptide/report/main.tex
 LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2025-01-18>
 (/usr/local/texlive/2025/texmf-dist/tex/latex/base/article.cls
@@ -167,7 +167,8 @@ Document Style - pseudocode environments for use with the `algorithmicx' style
 File: l3backend-pdftex.def 2024-05-08 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count295
 \l__pdf_internal_box=\box56
-) (/Users/aliahmadi/Documents/Projects/gold-binding-peptide/report/main.aux)
+)
+No file main.aux.
 \openout1 = `main.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 13.
@@ -184,7 +185,7 @@ LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 13.
 LaTeX Font Info:    ... okay on input line 13.
 LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 13.
 LaTeX Font Info:    ... okay on input line 13.
- (/usr/local/texlive/2025/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+(/usr/local/texlive/2025/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count296
 \scratchdimen=\dimen161
@@ -208,10 +209,17 @@ Package caption Info: float package is loaded.
 Package caption Info: End \AtBeginDocument code.
 
 
+LaTeX Warning: Citation `tanaka2017' on page 1 undefined on input line 29.
+
+
+
 [1
 
 {/usr/local/texlive/2025/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-/Users/aliahmadi/Documents/Projects/gold-binding-peptide/report/main.tex:62: Undefined control sequence.
+
+LaTeX Warning: Citation `janairo2022a' on page 2 undefined on input line 31.
+
+/Users/aliahmadi/Documents/Projects/Gold-Binding-Peptide/report/main.tex:62: Undefined control sequence.
 l.62 ...i \in S, \quad \Phi(s_i) = x_i \in \mathbb
                                                   {R}^d\]
 The control sequence at the end of the top line
@@ -220,7 +228,7 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-/Users/aliahmadi/Documents/Projects/gold-binding-peptide/report/main.tex:64: Undefined control sequence.
+/Users/aliahmadi/Documents/Projects/Gold-Binding-Peptide/report/main.tex:64: Undefined control sequence.
 l.64 ...[I = \{I_i\}_{i=1}^N,\quad I_i \in \mathbb
                                                   {R}_{\ge0},\]
 The control sequence at the end of the top line
@@ -255,6 +263,15 @@ Package pdftex.def Info: images/2.png  used on input line 104.
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
+LaTeX Warning: Citation `janairo2022a' on page 3 undefined on input line 112.
+
+
+LaTeX Warning: Citation `kidera1985' on page 3 undefined on input line 112.
+
+
+LaTeX Warning: Citation `janairo2019' on page 3 undefined on input line 112.
+
+
 
 [3]
 
@@ -262,7 +279,7 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
 
-[4 </Users/aliahmadi/Documents/Projects/gold-binding-peptide/report/images/1.png> </Users/aliahmadi/Documents/Projects/gold-binding-peptide/report/images/2.png>]
+[4 <./images/1.png> <./images/2.png>]
 Overfull \hbox (2.93137pt too wide) in paragraph at lines 164--165
 []\OT1/cmr/bx/n/10 Support Vec-tor Ma-chines (SVM): \OT1/cmr/m/n/10 Ef-fec-tive in high[]dimensional spaces
  []
@@ -286,14 +303,28 @@ Overfull \hbox (9.546pt too wide) in paragraph at lines 218--219
 
 
 [8]
+
+LaTeX Warning: Reference `tab:all_model_performance' on page 9 undefined on input line 253.
+
+
+LaTeX Warning: Citation `Breiman2001RandomForests' on page 9 undefined on input line 275.
+
+
+LaTeX Warning: Citation `Lundberg2017SHAP' on page 9 undefined on input line 275.
+
+
+LaTeX Warning: Reference `fig:permutation_importance' on page 9 undefined on input line 277.
+
 <images/12.png, id=51, 722.7pt x 505.89pt>
 File: images/12.png Graphic file (type png)
 <use images/12.png>
 Package pdftex.def Info: images/12.png  used on input line 281.
 (pdftex.def)             Requested size: 276.00105pt x 193.19737pt.
 
-
 LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+LaTeX Warning: Reference `fig:shap_plots' on page 9 undefined on input line 286.
 
 <images/13.png, id=52, 578.16pt x 397.485pt>
 File: images/13.png Graphic file (type png)
@@ -307,27 +338,99 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [9]
 
-[10 </Users/aliahmadi/Documents/Projects/gold-binding-peptide/report/images/12.png> </Users/aliahmadi/Documents/Projects/gold-binding-peptide/report/images/13.png>]
+[10 <./images/12.png> <./images/13.png>]
 
-[11] (/Users/aliahmadi/Documents/Projects/gold-binding-peptide/report/main.aux)
+LaTeX Warning: Citation `tanaka2017' on page 11 undefined on input line 309.
+
+
+LaTeX Warning: Citation `janairo2022a' on page 11 undefined on input line 309.
+
+
+LaTeX Warning: Citation `kidera1985' on page 11 undefined on input line 310.
+
+
+LaTeX Warning: Citation `henikoff1992' on page 11 undefined on input line 310.
+
+
+LaTeX Warning: Citation `tanaka2017' on page 11 undefined on input line 311.
+
+
+LaTeX Warning: Citation `bergstra2012' on page 11 undefined on input line 312.
+
+
+LaTeX Warning: Citation `prechelt1998' on page 11 undefined on input line 312.
+
+
+LaTeX Warning: Citation `lundberg2017unified' on page 11 undefined on input line 313.
+
+
+LaTeX Warning: Citation `zhang2022protein' on page 11 undefined on input line 317.
+
+
+LaTeX Warning: Citation `jumper2021highly' on page 11 undefined on input line 318.
+
+
+LaTeX Warning: Citation `rao2021transformer' on page 11 undefined on input line 319.
+
+
+LaTeX Warning: Citation `elnaggar2021prottrans' on page 11 undefined on input line 319.
+
+
+LaTeX Warning: Citation `Szegedy2016LabelSmoothing' on page 11 undefined on input line 320.
+
+
+LaTeX Warning: Citation `szegedy2016rethinking' on page 11 undefined on input line 320.
+
+
+LaTeX Warning: Citation `Krogh1992Dropout' on page 11 undefined on input line 321.
+
+
+LaTeX Warning: Citation `krogh1992simple' on page 11 undefined on input line 321.
+
+
+LaTeX Warning: Citation `Sundararajan2017IntegratedGradients' on page 11 undefined on input line 322.
+
+
+
+[11]
+
+LaTeX Warning: Citation `Breiman2001RandomForests' on page 12 undefined on input line 328.
+
+
+LaTeX Warning: Citation `Lundberg2017SHAP' on page 12 undefined on input line 328.
+
+(./main.bbl
+
+[12]
+
+[13])
+
+[14] (./main.aux)
  ***********
 LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2025-01-18>
  ***********
+
+
+LaTeX Warning: There were undefined references.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
  ) 
 Here is how much of TeX's memory you used:
- 4307 strings out of 473190
- 72333 string characters out of 5715801
- 470939 words of memory out of 5000000
- 27541 multiletter control sequences out of 15000+600000
+ 4331 strings out of 473190
+ 72418 string characters out of 5715801
+ 470616 words of memory out of 5000000
+ 27564 multiletter control sequences out of 15000+600000
  565538 words of font info for 60 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 67i,10n,77p,1325b,408s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 67i,10n,77p,1325b,406s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt8.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb>
-Output written on /Users/aliahmadi/Documents/Projects/gold-binding-peptide/report/main.pdf (11 pages, 605281 bytes).
+Output written on main.pdf (14 pages, 620689 bytes).
 PDF statistics:
- 140 PDF objects out of 1000 (max. 8388607)
- 82 compressed objects within 1 object stream
+ 150 PDF objects out of 1000 (max. 8388607)
+ 89 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  21 words of extra memory for PDF output out of 10000 (max. 10000000)
 

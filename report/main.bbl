@@ -1,0 +1,98 @@
+\begin{thebibliography}{10}
+
+\bibitem{bergstra2012}
+James Bergstra and Yoshua Bengio.
+\newblock Random search for hyper-parameter optimization.
+\newblock In {\em Journal of Machine Learning Research}, volume~13, pages 281--305, 2012.
+
+\bibitem{Breiman2001RandomForests}
+Leo Breiman.
+\newblock Random forests.
+\newblock {\em Machine Learning}, 45(1):5--32, 2001.
+
+\bibitem{elnaggar2021prottrans}
+Ahmed Elnaggar et~al.
+\newblock Prottrans: Toward understanding the language of life through self-supervised learning.
+\newblock {\em IEEE Transactions on Pattern Analysis and Machine Intelligence}, 2021.
+
+\bibitem{henikoff1992}
+Steven Henikoff and Jorja~G. Henikoff.
+\newblock Amino acid substitution matrices from protein blocks.
+\newblock {\em Proceedings of the National Academy of Sciences}, 89(22):10915--10919, 1992.
+
+\bibitem{janairo2019}
+Jose Isagani~B. Janairo.
+\newblock Predictive analytics for biomineralization peptide binding affinity.
+\newblock {\em BioNanoScience}, 9(1):74--78, 2019.
+
+\bibitem{janairo2022a}
+Jose Isagani~B. Janairo.
+\newblock A machine learning classification model for gold-binding peptides.
+\newblock {\em ACS Omega}, 7(15):14069--14073, 2022.
+
+\bibitem{jumper2021highly}
+John Jumper et~al.
+\newblock Highly accurate protein structure prediction with alphafold.
+\newblock {\em Nature}, 596:583--589, 2021.
+
+\bibitem{kidera1985}
+A.~Kidera, Y.~Konishi, M.~Oka, T.~Ooi, and H.~A. Scheraga.
+\newblock Statistical analysis of the physical properties of the 20 naturally occurring amino acids.
+\newblock {\em Journal of Protein Chemistry}, 4(1):23--55, 1985.
+
+\bibitem{Krogh1992Dropout}
+Anders Krogh and John~A. Hertz.
+\newblock A simple weight decay can improve generalization.
+\newblock {\em Advances in Neural Information Processing Systems}, 4:950--957, 1992.
+
+\bibitem{krogh1992simple}
+Anders Krogh and John~A. Hertz.
+\newblock A simple weight decay can improve generalization.
+\newblock {\em Advances in Neural Information Processing Systems}, 4:950--957, 1992.
+
+\bibitem{Lundberg2017SHAP}
+Scott~M. Lundberg and Su-In Lee.
+\newblock A unified approach to interpreting model predictions.
+\newblock In {\em Advances in Neural Information Processing Systems (NeurIPS)}, volume~30, 2017.
+
+\bibitem{lundberg2017unified}
+Scott~M. Lundberg and Su-In Lee.
+\newblock A unified approach to interpreting model predictions.
+\newblock In {\em Advances in Neural Information Processing Systems}, volume~30, 2017.
+
+\bibitem{prechelt1998}
+Lutz Prechelt.
+\newblock Early stopping---but when?
+\newblock {\em Neural Networks: Tricks of the Trade}, pages 55--69, 1998.
+
+\bibitem{rao2021transformer}
+Roshan Rao et~al.
+\newblock Transformer protein language models are unsupervised structure learners.
+\newblock {\em bioRxiv}, 2021.
+
+\bibitem{Sundararajan2017IntegratedGradients}
+Mukund Sundararajan, Ankur Taly, and Qiqi Yan.
+\newblock Axiomatic attribution for deep networks.
+\newblock In {\em Proceedings of the 34th International Conference on Machine Learning (ICML)}, pages 3319--3328, 2017.
+
+\bibitem{szegedy2016rethinking}
+Christian Szegedy et~al.
+\newblock Rethinking the inception architecture for computer vision.
+\newblock In {\em Proceedings of the IEEE conference on computer vision and pattern recognition}, pages 2818--2826, 2016.
+
+\bibitem{Szegedy2016LabelSmoothing}
+Christian Szegedy, Vincent Vanhoucke, Sergey Ioffe, Jon Shlens, and Zbigniew Wojna.
+\newblock Rethinking the inception architecture for computer vision.
+\newblock In {\em Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition (CVPR)}, pages 2818--2826, 2016.
+
+\bibitem{tanaka2017}
+M.~Tanaka, K.~Sano, T.~Fukuda, K.~Kato, and K.~Shiba.
+\newblock Array-based functional peptide screening and characterization of gold nanoparticle synthesis.
+\newblock {\em Acta Biomaterialia}, 49:495--506, 2017.
+
+\bibitem{zhang2022protein}
+Chao Zhang et~al.
+\newblock Protein sequence datasets for machine learning.
+\newblock {\em Briefings in Bioinformatics}, 2022.
+
+\end{thebibliography}

@@ -26,9 +26,9 @@ Gold‐binding peptides are short chains of amino acids (typically 5–20 residu
 \end{enumerate}
 
 \subsection{Intensity}
-In spot‐array binding assays, each 10‐residue peptide is immobilized on a solid support and exposed to gold nanoparticles. The \emph{intensity} is defined as the optical (colorimetric) signal measured at each peptide spot, proportional to the amount of bound nanoparticles. Peptides with stronger binding produce darker spots (higher intensity), whereas weak or non‐binding sequences yield lighter spots (lower intensity).
+In spot‐array binding assays, each 10‐residue peptide is immobilized on a solid support and exposed to gold nanoparticles \cite{tanaka2017}. The \emph{intensity} is defined as the optical (colorimetric) signal measured at each peptide spot, proportional to the amount of bound nanoparticles. Peptides with stronger binding produce darker spots (higher intensity), whereas weak or non‐binding sequences yield lighter spots (lower intensity).
 
-In the dataset of Janairo \emph{et al.}, each of the 1\,720 unique 10‐mer peptides was assigned an intensity value based on the median image‐analysis readout from Tanaka \emph{et al.}'s screen. To classify peptides into binders and non‐binders, the median intensity of the entire set, denoted \(I_{\mathrm{med}}\), was used as the threshold:
+In the dataset of Janairo \emph{et al.} \cite{janairo2022a}, each of the 1\,720 unique 10‐mer peptides was assigned an intensity value based on the median image‐analysis readout from Tanaka \emph{et al.}'s screen. To classify peptides into binders and non‐binders, the median intensity of the entire set, denoted \(I_{\mathrm{med}}\), was used as the threshold:
 \[
 I_{\mathrm{med}} = 207{,}500 \quad\text{(arbitrary units)}.
 \]
@@ -109,7 +109,7 @@ However, as illustrated in the violin plot and histogram in Figure 1, Class A pe
 \end{figure}
 
 \section{Related Work}
-As part of his lecture series, Jose Isagani B. Janairo presents a practical workflow for classifying gold-binding peptides that elegantly demonstrates end-to-end machine-learning in R: starting with raw amino-acid sequences, deriving ten physicochemical descriptors via Kidera factors, and organizing those into a labeled dataset; next, stratified train–validation splitting and 10-fold cross-validation to tune and compare multiple classifiers (logistic regression, decision trees, k-nearest neighbors, SVMs with various kernels, and a neural network); then refining the best performer—a radial-basis SVM—by selecting only the most informative descriptor subset; and finally, assessing generalization on hold-out data and employing permutation-based feature importance to reveal which peptide properties most strongly drive gold-binding predictions, all accompanied by clear visualizations of model performance and variable rankings.
+As part of his lecture series, Jose Isagani B. Janairo \cite{janairo2022a} presents a practical workflow for classifying gold-binding peptides that elegantly demonstrates end-to-end machine-learning in R: starting with raw amino-acid sequences, deriving ten physicochemical descriptors via Kidera factors \cite{kidera1985}, and organizing those into a labeled dataset; next, stratified train–validation splitting and 10-fold cross-validation to tune and compare multiple classifiers (logistic regression, decision trees, k-nearest neighbors, SVMs with various kernels, and a neural network); then refining the best performer—a radial-basis SVM—by selecting only the most informative descriptor subset \cite{janairo2019}; and finally, assessing generalization on hold-out data and employing permutation-based feature importance to reveal which peptide properties most strongly drive gold-binding predictions, all accompanied by clear visualizations of model performance and variable rankings.
 
 On a macOS environment, the code was executed and produced results (Table 1) consistent with the related lecture (Accuracy: 0.8019).
 
@@ -272,7 +272,7 @@ Siamese-like NN & \textbf{0.840} & \textbf{0.839} & 0.809 & \textbf{0.8884} & \t
 \end{table}
 
 \section{Model Interpretation}
-To understand the factors driving the Siamese-like model's superior performance, we analyzed the contribution of each feature using permutation importance and SHAP (SHapley Additive exPlanations) values. Permutation importance measures the drop in a model's performance when a single feature's values are randomly shuffled, indicating which features the model relies on most. SHAP values provide a deeper, more granular insight by showing how each feature's value influences a specific prediction.
+To understand the factors driving the Siamese-like model's superior performance, we analyzed the contribution of each feature using permutation importance \cite{Breiman2001RandomForests} and SHAP \cite{Lundberg2017SHAP} (SHapley Additive exPlanations) values. Permutation importance measures the drop in a model's performance when a single feature's values are randomly shuffled, indicating which features the model relies on most. SHAP values provide a deeper, more granular insight by showing how each feature's value influences a specific prediction.
 
 The permutation importance analysis on the model's test set reveals the relative significance of each feature, with the most impactful features causing the largest drop in F1-score when disrupted. Figure \ref{fig:permutation_importance} visually represents this ranking, highlighting the top contributors.
 
@@ -304,10 +304,32 @@ Most Important Features Based on the combined analysis of permutation importance
 
 In summary, the model heavily leverages the physicochemical properties of the peptides, particularly those related to hydrophobicity and structural preferences as encoded by the Kidera factors. The analysis also highlights the importance of evolutionary context, as captured by the BLOSUM62 embedding, in making accurate predictions.
 
+\section{Limitations and Challenges}
+Despite the promising performance of the proposed models, several limitations remain.  
+First, the dataset contains only 1,720 peptides of fixed length (10 residues), all derived from a single screening experiment \cite{tanaka2017,janairo2022a}. This limited diversity may reduce generalization to other peptide lengths or experimental conditions.  
+Second, the feature representation is restricted to AAC, Kidera factors, and BLOSUM62 embeddings \cite{kidera1985,henikoff1992}. While these capture key sequence-level properties, they omit important structural, thermodynamic, and molecular dynamics information that may influence gold-binding.  
+Third, the optical intensity measurements are subject to experimental variability and systematic biases \cite{tanaka2017}, which may introduce noise into the classification labels.  
+Fourth, although cross-validation and early stopping were employed \cite{bergstra2012,prechelt1998}, the combination of a small dataset and complex architectures, such as the Siamese-like neural network, can still lead to overfitting.  
+Finally, while permutation importance and SHAP provide interpretability \cite{lundberg2017unified}, these methods operate on engineered features rather than directly on the raw amino acid sequences, which may obscure underlying biochemical mechanisms.
+
+\section{Proposed Solutions and Future Work}
+Several strategies could address these limitations and improve model robustness.  
+Expanding the dataset by integrating gold-binding peptide sequences from diverse sources, including varying lengths, compositions, and experimental conditions, would improve generalization \cite{zhang2022protein}.  
+Incorporating structural features obtained from predicted 3D structures (e.g., AlphaFold2 \cite{jumper2021highly}) or molecular docking studies could capture spatial and conformational factors critical for binding.  
+Combining current physicochemical descriptors with embeddings from large protein language models such as ESM \cite{rao2021transformer} or ProtBERT \cite{elnaggar2021prottrans} may offer richer sequence representations.  
+To improve robustness against experimental noise, techniques such as label smoothing \cite{Szegedy2016LabelSmoothing}, robust loss functions, or careful preprocessing could be applied \cite{szegedy2016rethinking}.  
+Simplifying model architectures or introducing stronger regularization methods such as dropout \cite{Krogh1992Dropout} and weight decay \cite{krogh1992simple} may help mitigate overfitting risks.  
+Finally, adopting sequence-level attribution methods like Integrated Gradients \cite{Sundararajan2017IntegratedGradients} could provide more biologically interpretable insights by directly highlighting influential residues in the peptide sequences.
+
+
 \section{Conclusion}
 This study successfully addressed the problem of classifying gold-binding peptides by developing and evaluating a range of machine learning models. The Siamese-like Neural Network, which incorporates a combined feature set derived from AAC, Kidera Factors, and BLOSUM62 embeddings, emerged as the most effective classifier. With a test set accuracy of \textbf{0.840} and a macro F1-score of \textbf{0.839}, this model significantly outperformed other evaluated methods, including XGBoost, a standard SVM, and a Residual Attention Network.
 
-The model's superior performance can be attributed to its ability to learn from a diverse and rich feature representation of the peptide sequences. Furthermore, the interpretability analysis provided valuable insights into the underlying mechanisms of gold-binding. The permutation importance and SHAP analyses revealed that physicochemical properties, such as \textbf{KF3 (Extended Structure Preference)} and \textbf{KF4 (Hydrophobicity)}, alongside the evolutionary context captured by \textbf{BLOSUM62\_R}, are the primary drivers of the model's predictions. These findings suggest that the structural and chemical characteristics of the peptides are paramount in determining their affinity for gold surfaces.
+The model's superior performance can be attributed to its ability to learn from a diverse and rich feature representation of the peptide sequences. Furthermore, the interpretability analysis provided valuable insights into the underlying mechanisms of gold-binding. The permutation importance \cite{Breiman2001RandomForests} and SHAP analyses \cite{Lundberg2017SHAP} revealed that physicochemical properties, such as \textbf{KF3 (Extended Structure Preference)} and \textbf{KF4 (Hydrophobicity)}, alongside the evolutionary context captured by \textbf{BLOSUM62\_R}, are the primary drivers of the model's predictions. These findings suggest that the structural and chemical characteristics of the peptides are paramount in determining their affinity for gold surfaces.
 
 In conclusion, this research demonstrates the power of combining multiple feature engineering techniques with advanced neural network architectures to solve complex biological classification problems. The high-performing and interpretable Siamese-like classifier provides a robust tool for identifying potential strong gold-binding peptides, which can accelerate their application in fields such as nanotechnology, biosensing, and targeted drug delivery. Future work could explore the integration of additional feature types, such as structural data or sequence-based convolutional features, to further enhance model performance and biological interpretability.
+
+\bibliographystyle{plain}
+\bibliography{references}
+
 \end{document}
